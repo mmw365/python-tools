@@ -87,7 +87,7 @@ def send_result_mail():
     print('send result mail')
     todayDt = date.today().strftime('%Y%m%d')
     config = ConfigParser()
-    config.read("check-new-book-info.ini")
+    config.read("check_new_book_info.ini")
 
     msg = MIMEMultipart()
     msg['Subject'] = '江東区・墨田区の新着図書 ' + todayDt
